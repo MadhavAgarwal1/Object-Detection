@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result Page</title>
+</head>
+
+<body>
+    Detected : {{showOps}} and file is {{file}} and aq is {{aq}}
+
+    <div>
+        <h2>{{file_url}}</h2>
+        {% if file_url %}
+        <img src="{{ file_url }}" alt="image" style="width: 700px; height: 500px;">
+        <br>
+        <a class="btn btn-dark my-4" href="/">Return to Homepage</a>
+        {% else %}
+        <p>No movies posters added.</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>
